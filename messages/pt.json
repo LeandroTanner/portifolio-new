@@ -1,0 +1,18 @@
+{
+  "Hero": {
+    "title": "Desenvolvedor Full Stack",
+    "subtitle": "Criando experiências digitais."
+  },
+  "Nav": {
+    "toggle": "Alternar idioma",
+    "items": {
+      "home": "Início",
+      "about": "Sobre",
+      "projects": "Projetos",
+      "skills": "Habilidades",
+      "contact": "Contato",
+      "xp": "Experiência",
+      "graduation": "Formação"
+    }
+  }
+}

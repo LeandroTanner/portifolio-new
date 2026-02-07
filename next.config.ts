@@ -1,7 +1,12 @@
-import type { NextConfig } from "next";
+import createNextIntlPlugin from 'next-intl/plugin';
 
-const nextConfig: NextConfig = {
-  /* config options here */
+// Cria o plugin. Por padrão ele procura por './i18n/request.ts'
+// Como sua pasta 'i18n' está na raiz (vejo isso na sua imagem), vai funcionar direto.
+const withNextIntl = createNextIntlPlugin();
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // Outras configurações do Next.js viriam aqui
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);
