@@ -19,6 +19,10 @@ const iconMap = {
   linkedin: 'fa-brands fa-linkedin',
   whatsapp: 'fa-brands fa-whatsapp',
   instagram: 'fa-brands fa-instagram',
+  curriculum: 'fa-solid fa-file-lines',
+
+  download: 'fa-solid fa-download', 
+  view: 'fa-solid fa-eye',
 
   // Línguas
   globe: 'fa-solid fa-earth-americas',

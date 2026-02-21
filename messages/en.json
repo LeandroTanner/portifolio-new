@@ -1,7 +1,24 @@
 {
   "Hero": {
     "title": "Full Stack Developer",
-    "subtitle": "Building digital experiences."
+    "subtitle": "Creating digital experiences from end to end.",
+    "skills": [
+      "Developing in C# & .NET",
+      "Managing SQL Server databases",
+      "Creating interfaces with Next.js",
+      "Styling with Tailwind & Bootstrap",
+      "Coding Modern JavaScript"
+    ],
+    "projects": "View projects",
+    "curriculum": "View CV"
+  },
+  "Dialog":{
+    "cv": {
+      "title": "Curriculum - Leandro Tanner",
+      "description": "Download or view my full CV.",
+      "btn-download": "Download CV",
+      "btn-view": "View CV"
+    }
   },
   "Nav": {
     "toggle": "Switch language",

@@ -1,3 +1,5 @@
+'use client';
+
 import { ModeToggle } from '@/components/themes/mode-toggle';
 import { LangToggle } from '../languages/lang-toggle';
 import Image from 'next/image';
@@ -10,6 +12,8 @@ import {
 } from "@/components/ui/tooltip";
 import { useTranslations } from 'next-intl';
 import { TooltipHover } from '../utils/tooltip';
+import { Button } from '../ui/button';
+import { scrollTo } from '@/config/utils';
 
 interface NavItem {
   name: string;
@@ -22,7 +26,7 @@ export default function NavBar() {
 
   const navItems: NavItem[] = [
     { name: t('about'),    icon: 'user',    key: 'about' },
-    { name: t('xp'),     icon: 'xp',    key: 'xp' },
+    { name: t('xp'),     icon: 'xp',    key: 'experience' },
     { name: t('graduation'),     icon: 'graduation',    key: 'graduation' },
     { name: t('projects'), icon: 'code',    key: 'projects' },
     { name: t('contact'),  icon: 'mail',    key: 'contact' },
@@ -42,7 +46,7 @@ export default function NavBar() {
         
         {/* LOGO */}
         <TooltipHover text={t('home')}>
-          <a href='/' className="flex items-center gap-2 px-2 border-r border-slate-200 dark:border-slate-800 shrink-0">
+          <a onClick={() => scrollTo('hero')} className="flex items-center gap-2 px-2 border-r border-slate-200 dark:border-slate-800 shrink-0 cursor-pointer hover:no-underline">
             <div className="relative w-5 h-5 sm:w-6 sm:h-6 shrink-0">
               <Image
                 src="/img/logo/_logo-sm.png"
@@ -64,8 +68,8 @@ export default function NavBar() {
               <li key={item.key}>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <a 
-                      href={`#${item.key}`} 
+                    <Button variant='link'  
+                      onClick={() => scrollTo(item.key)}
                       className="
                         group flex items-center justify-center
                         w-8 h-8 sm:w-auto sm:h-auto sm:px-3 sm:py-1.5 
@@ -73,7 +77,7 @@ export default function NavBar() {
                         text-slate-600 dark:text-slate-400
                         hover:bg-white dark:hover:bg-slate-800
                         hover:text-blue-600 dark:hover:text-blue-400
-                        transition-all duration-300 ease-in-out
+                        transition-all duration-300 ease-in-out cursor-pointer hover:no-underline
                       "
                     >
                       <Icon name={item.icon} className="w-4 h-4 shrink-0" />
@@ -88,7 +92,7 @@ export default function NavBar() {
                       ">
                         {item.name}
                       </span>
-                    </a>
+                    </Button>
                   </TooltipTrigger>
                   
                   {/* CONTEÚDO DO TOOLTIP */}
