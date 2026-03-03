@@ -96,7 +96,7 @@ export default function NavBar() {
                   </TooltipTrigger>
                   
                   {/* CONTEÚDO DO TOOLTIP */}
-                  <TooltipContent side="bottom" className="sm:hidden text-xs bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900">
+                  <TooltipContent side="top" className="sm:hidden text-xs bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900">
                     <p>{item.name}</p>
                   </TooltipContent>
                 </Tooltip>

@@ -6,6 +6,7 @@ import { Outfit } from 'next/font/google';
 import '@/app/globals.css';
 import NavBar from '@/components/nav/nav-bar';
 import { Metadata } from 'next';
+import Footer from '@/components/footer/footer';
 
 const fontSans = Outfit({
   subsets: ['latin'],
@@ -44,6 +45,7 @@ export default async function RootLayout({
           >
             <NavBar />
             <main>{children}</main>
+            <Footer />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

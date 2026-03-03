@@ -31,5 +31,36 @@
       "xp": "Experiência",
       "graduation": "Formação"
     }
+  },
+  "Contact": {
+    "title": "Entre em Contato",
+    "subtitle": "Tem um projeto em mente ou quer conversar? Me envie uma mensagem!",
+    "form": {
+      "name": "Seu nome completo",
+      "subject": "Assunto",
+      "email": "Seu email",
+      "message": "Sua mensagem",
+      "send": "Enviar Mensagem",
+      "sending": "Enviando...",
+      "success": "Mensagem enviada com sucesso!",
+      "error": "Erro ao enviar mensagem. Tente novamente."
+    },
+    "or": "ou me encontre em",
+    "info": {
+      "email": "Email",
+      "location": "Localizacao",
+      "locationValue": "Hortolândia, SP - Brasil"
+    }
+  },
+  "Email": {
+    "invalid": "Por favor, preencha todos os campos corretamente.",
+    "success": "Mensagem enviada com sucesso!",
+    "error": "Erro ao enviar mensagem. Tente novamente."
+  },
+  "Footer": {
+    "rights": "Todos os direitos reservados.",
+    "madeWith": "Feito com",
+    "and": "e",
+    "by": "por"
   }
 }
