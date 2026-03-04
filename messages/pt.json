@@ -32,9 +32,76 @@
       "graduation": "Formação"
     }
   },
+  "Projects": {
+    "title": "Projetos",
+    "subtitle": "Uma selecao de projetos que demonstram minhas habilidades e experiencia.",
+    "techTitle": "Tecnologias que Utilizo",
+    "techSubtitle": "Ferramentas e tecnologias que uso no dia a dia para construir solucoes robustas.",
+    "viewProject": "Ver Projeto",
+    "viewCode": "Código Fonte",
+    "items": [
+      {
+        "title": "Duelo de D&D",
+        "description": "Apelidado de 'Andrey Duelos', este projeto é um jogo de cartas RPG baseado no conhecido Dungeons & Dragons. O jogo é projetado para um jogador ganhar 3 cartas de D&D e batalhar contra outras 3 cartas sorteadas pelo sistema. O objetivo do jogo é ganhar os 3 duelos que serão definidos pelo usuário e somar pontos. O backend foi realizado com SpringBoot, que aprendemos na faculdade, e o frontend foi desenvolvido com Next.js e Tailwind CSS, tecnologias que estou estudando atualmente. O código do projeto é dividido em 3 partes: backend, frontend e docker, cada um com seu respectivo repositório. O projeto foi desenvolvido por mim e mais 3 alunos do meu curso, o código fornecido no botão abaixo leva ao repositório com o docker compose, onde tem os outros dois links. Nesse projeto em contribui com algumas partes do backend, configuração do postgre e a maior parte do frontend. Api para consumo das cartas: https://www.dnd5eapi.co",
+        "image": "",
+        "technologies": ["NextJS", "Tailwind CSS", "SpringBoot", "PostGreSQL", "Docker"],
+        "liveUrl": "",
+        "repoUrl": "https://github.com/LeandroTanner/rpg-web3-compose.git"
+      },
+      {
+        "title": "FitForge",
+        "description": "Sistema de gerenciamento de academia com controle de alunos, treinos e exercícios. O propósito do sistema é ser utilizado pelas academias apenas e não por clientes finais, assim as academias podem gerenciar os treinos e usuários cadastrados, para seu funcionamento completo necessita de autenticação. O sistema foi desenvolvido para atender as necessidades de academias de pequeno e médio porte, oferecendo uma interface intuitiva e funcionalidades completas para facilitar a gestão do negócio. IMPORTANTE: O backend NodeJs do projeto está com o repositório privado, mas o frontend está disponível para visualização. Caso deseje acessar o backend, entre em contato comigo para que eu possa fornecer acesso ou compartilhar o código de alguma forma.",
+        "image": "/img/projects/fitforge.png",
+        "technologies": ["NodeJS", "Docker", "Prisma", "React"],
+        "liveUrl": "",
+        "repoUrl": "https://github.com/LeandroTanner/fitforge-frontend.git"
+      },
+      {
+        "title": "Estuda Enade",
+        "description": "Trabalho feito com um amigo da faculdade, fui responsável pelo FrontEnd e ele o BackEnd. Se trata de um site sobre o Enade, uma prova de avaliação dos alunos que cursam ensino superior. O site tem como objetivo ajudar os alunos a se prepararem para a prova, oferecendo materiais de estudo, simulados e dicas de preparação.",
+        "image": "/img/projects/estuda-enade.png",
+        "technologies": ["HTML", "CSS", "JS", "Bootstrap", "PHP"],
+        "liveUrl": "",
+        "repoUrl": "https://github.com/LeandroTanner/estudaenade.git"
+      },
+      {
+        "title": "Portifólio antigo",
+        "description": "Meu antigo portifólio, desenvolvido antes de aprender Next.js e outras tecnologias modernas. Ele foi criado usando HTML, CSS e JavaScript puro, sem o uso de frameworks ou bibliotecas. O design é simples e funcional, é responsivo, porém possui algumas limitações em termos de usabilidade. Este projeto me ajudou a aprender os fundamentos do desenvolvimento web e me motivou a buscar conhecimentos mais avançados para criar um portifólio mais moderno e eficiente.",
+        "image": "/img/projects/old-portifolio.png",
+        "technologies": ["HTML", "CSS", "JS"],
+        "liveUrl": "https://ltanner.dev/home",
+        "repoUrl": "https://github.com/LeandroTanner/portifolio-old.git"
+      }
+    ],
+    "techStack": [
+      { "name": "C#", "icon": "csharp" },
+      { "name": "SQL Server", "icon": "database" },
+      { "name": ".NET", "icon": "dotnet" },
+      { "name": "Java", "icon": "java" },
+      { "name": "JavaScript", "icon": "javascript" },
+      { "name": "TypeScript", "icon": "typescript" },
+      { "name": "NodeJs", "icon": "nodejs" },
+      { "name": "PostgreSQL", "icon": "postgre" },
+      { "name": "MySQL", "icon": "database" },
+      { "name": "React", "icon": "react" },
+      { "name": "Next.js", "icon": "nextjs" },
+      { "name": "Node.js", "icon": "nodejs" },
+      { "name": "Tailwind CSS", "icon": "tailwind" },
+      { "name": "Bootstrap", "icon": "bootstrap" },
+      { "name": "HTML5", "icon": "html" },
+      { "name": "CSS3", "icon": "css" },
+      { "name": "Git", "icon": "git" },
+      { "name": "Docker", "icon": "docker" },
+      { "name": "Python", "icon": "python" },
+      { "name": "PHP", "icon": "php" },
+      { "name": "Linux", "icon": "linux" }
+    ],
+    "explanation": "Algumas dessas tecnologias foram utilizadas em projetos da faculdade, estagios e projetos pessoais. No ramo profissional, hoje trabalho com C#, .NET, Bootstrap, JQuery, JS e SQL Server, mas estou sempre buscando aprender novas tecnologias e ferramentas para me manter atualizado e oferecer as melhores solucoes."
+  },
   "Contact": {
     "title": "Entre em Contato",
     "subtitle": "Tem um projeto em mente ou quer conversar? Me envie uma mensagem!",
+    "clear": "Limpar formulário",
     "form": {
       "name": "Seu nome completo",
       "subject": "Assunto",

@@ -9,6 +9,8 @@ import { openUrl } from '@/config/utils';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { sendEmail } from '@/actions/email';
+import { Button } from '@/components/ui/button';
+import { TooltipHover } from '@/components/utils/tooltip';
 
 interface ContactInfo {
   icon: IconName;
@@ -62,7 +64,6 @@ export default function ContactSection() {
       setFeedback({ type: 'success', message: t('form.success') });
       (e.target as HTMLFormElement).reset();
     } else {
-      // Usando o arquivo de tradução para a mensagem de erro
       setFeedback({ type: 'error', message: t('form.error') });
     }
     
@@ -120,7 +121,6 @@ export default function ContactSection() {
           </FadeIn>
 
           <FadeIn direction='right' className='flex-1'>
-            {/* Correção: Agora apontando direto para o handleSubmit */}
             <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
               <div className='flex flex-col gap-1.5'>
                 <input
@@ -158,17 +158,24 @@ export default function ContactSection() {
                   className='w-full px-4 py-3 rounded-xl border border-border bg-card text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500/50 transition-all duration-300 resize-none'
                 />
               </div>
-              <motion.button
-                whileHover={{ scale: 1.01 }}
-                whileTap={{ scale: 0.98 }}
-                type='submit'
-                disabled={isPending}
-                className='w-full py-3 rounded-xl bg-blue-500 text-white font-semibold text-sm hover:bg-blue-600 transition-colors duration-300 flex items-center justify-center gap-2 cursor-pointer'
-              >
-                <Icon name={isPending ? 'loader' : 'send'} className={`text-sm ${isPending ? 'animate-spin' : ''}`} />
-                {/* Correção: Texto do botão dinamizado */}
-                {isPending ? t('form.sending') : t('form.send')}
-              </motion.button>
+              <div className="flex gap-2">
+                <motion.button
+                  whileHover={{ scale: 1.01 }}
+                  whileTap={{ scale: 0.98 }}
+                  type='submit'
+                  disabled={isPending}
+                  className='w-full py-3 rounded-xl bg-blue-500 text-white font-semibold text-sm hover:bg-blue-600 transition-colors duration-300 flex items-center justify-center gap-2 cursor-pointer'
+                >
+                  <Icon name={isPending ? 'loader' : 'send'} className={`text-sm ${isPending ? 'animate-spin' : ''}`} />
+                  {isPending ? t('form.sending') : t('form.send')}
+                </motion.button>
+                
+                <TooltipHover text={t('clear') || 'Clear form'}>
+                  <Button variant='outline' className='h-auto rounded-xl cursor-pointer' type='reset'>
+                      <Icon name='clear' />
+                  </Button>
+                </TooltipHover>
+              </div>
 
               {/* Mensagem de Feedback */}
               {feedback.message && (

@@ -2,23 +2,25 @@
 
 import { isValidString } from '@/config/formatters';
 import { siteConfig } from '@/config/site';
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server'; 
 import { Resend } from 'resend';
 
 const apiKey = process.env.RESEND_API_KEY;
 const templateId = process.env.RESEND_TEMPLATE_ID as string;
 const resend = new Resend(apiKey);
 
-const email = useTranslations('Email');
+
 
 export const sendEmail = async (emailFrom: string, name: string, subject: string, content: string) => {
+    const t = await getTranslations('Email');
+    
     try {
         const emailTo = siteConfig.links.email;
         
         if (!isValidString(emailTo) || !isValidString(name) || !isValidString(subject) || !isValidString(content)){
             return {
                 success: false,
-                message: 'Parâmetros de envio inválidos. Certifique-se de que tudo esteja preenchido.',
+                message: t('invalid'),
             };
         }
 
@@ -36,12 +38,12 @@ export const sendEmail = async (emailFrom: string, name: string, subject: string
             }
         });
 
-        return { success: true, message: 'Mensagem enviada com sucesso!' };
+        return { success: true, message: t('success') };
     }
     catch (error) {
         return {
             success: false,
-            message: 'Falha ao enviar o e-mail.',
+            message: t('error'),
             error: error instanceof Error ? error.message : 'Erro desconhecido'
         };
     }

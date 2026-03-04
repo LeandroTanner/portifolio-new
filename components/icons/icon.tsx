@@ -6,6 +6,7 @@ const iconMap = {
   menu: 'fa-solid fa-bars',
   close: 'fa-solid fa-xmark',
   code: 'fa-solid fa-code',
+  clear: 'fa-solid fa-broom',
   
   home: 'fa-solid fa-house',                      // Para Início
   xp: 'fa-solid fa-medal',                        // Para Experiência
@@ -53,8 +54,12 @@ const iconMap = {
   csharp: 'fa-brands fa-microsoft',
   dotnet: 'fa-brands fa-microsoft',
   database: 'fa-solid fa-database',
+  postgre: 'fa-brands fa-postgresql',
   javascript: 'fa-brands fa-js',
-  typescript: 'fa-brands fa-js',
+  php: 'fa-brands fa-php',
+  java: 'fa-brands fa-java',
+  linux: 'fa-brands fa-linux',
+  typescript: 'fa-brands fa-typescript',
   react: 'fa-brands fa-react',
   nextjs: 'fa-brands fa-react',
   nodejs: 'fa-brands fa-node-js',
