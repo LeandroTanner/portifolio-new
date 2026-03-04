@@ -1,12 +1,13 @@
+import type { NextConfig } from 'next';
 import createNextIntlPlugin from 'next-intl/plugin';
 
-// Cria o plugin. Por padrão ele procura por './i18n/request.ts'
-// Como sua pasta 'i18n' está na raiz (vejo isso na sua imagem), vai funcionar direto.
 const withNextIntl = createNextIntlPlugin();
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  // Outras configurações do Next.js viriam aqui
+const nextConfig: NextConfig = {
+  // Usa as imagens em avif e webp para otimizar o carregamento
+  images: {
+    formats: ['image/avif', 'image/webp'],
+  }
 };
 
 export default withNextIntl(nextConfig);

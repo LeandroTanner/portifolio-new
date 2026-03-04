@@ -43,7 +43,7 @@
       {
         "title": "D&D Duel",
         "description": "Nicknamed 'Andrey Duelos', this project is an RPG card game based on the well-known Dungeons & Dragons. The game is designed for a player to win 3 D&D cards and battle against another 3 cards drawn by the system. The objective of the game is to win the 3 duels that will be defined by the user and accumulate points. The backend was done with SpringBoot, which we learned in college, and the frontend was developed with Next.js and Tailwind CSS, technologies I am currently studying. The project code is divided into 3 parts: backend, frontend, and docker, each with its respective repository. The project was developed by me and 3 other students from my course, the code provided in the button below leads to the repository with the docker compose, where the other two links are located. In this project, I contributed with some parts of the backend, PostgreSQL configuration, and most of the frontend. API for card consumption: https://www.dnd5eapi.co",
-        "image": "",
+        "image": "/img/projects/rpg-duelo.webp",
         "technologies": ["NextJS", "Tailwind CSS", "SpringBoot", "PostGreSQL", "Docker"],
         "liveUrl": "",
         "repoUrl": "https://github.com/LeandroTanner/rpg-web3-compose.git"
@@ -51,7 +51,7 @@
       {
         "title": "FitForge",
         "description": "Gym management system with control of students, workouts, and exercises. The purpose of the system is to be used by gyms only and not by end customers, so gyms can manage the workouts and registered users. For its complete operation, it requires authentication. The system was developed to meet the needs of small and medium-sized gyms, offering an intuitive interface and complete functionalities to facilitate business management. IMPORTANT: The NodeJs backend of the project has a private repository, but the frontend is available for viewing. If you want to access the backend, please contact me so I can provide access or share the code in some way.",
-        "image": "/img/projects/fitforge.png",
+        "image": "/img/projects/fitforge.webp",
         "technologies": ["NodeJS", "Docker", "Prisma", "React"],
         "liveUrl": "",
         "repoUrl": "https://github.com/LeandroTanner/fitforge-frontend.git"
@@ -59,7 +59,7 @@
       {
         "title": "Estuda Enade",
         "description": "Work done with a friend from college, I was responsible for the FrontEnd and he for the BackEnd. It is a website about Enade, an evaluation test for students in higher education. The site aims to help students prepare for the exam by offering study materials, simulations, and preparation tips.",
-        "image": "/img/projects/estuda-enade.png",
+        "image": "/img/projects/estuda-enade.webp",
         "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP"],
         "liveUrl": "",
         "repoUrl": "https://github.com/LeandroTanner/estudaenade.git"
@@ -67,7 +67,7 @@
       {
         "title": "Old Portfolio",
         "description": "My old portfolio, developed before learning Next.js and other modern technologies. It was created using pure HTML, CSS, and JavaScript, without the use of frameworks or libraries. The design is simple and functional, it is responsive but has some limitations in terms of usability. This project helped me learn the fundamentals of web development and motivated me to seek more advanced knowledge to create a more modern and efficient portfolio.",
-        "image": "/img/projects/old-portifolio.png",
+        "image": "/img/projects/old-portifolio.webp",
         "technologies": ["HTML", "CSS", "JavaScript"],
         "liveUrl": "https://ltanner.dev/home",
         "repoUrl": "https://github.com/LeandroTanner/portifolio-old.git"
