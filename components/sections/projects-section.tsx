@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { openUrl } from '@/config/utils';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { InfoDialog } from '../dialogs/info-dialog';
 
 interface ProjectItem {
   title: string;
@@ -16,6 +17,8 @@ interface ProjectItem {
   technologies: string[];
   liveUrl: string;
   repoUrl: string;
+  info?: string;
+  titleInfo?: string;
 }
 
 interface TechItem {
@@ -36,7 +39,27 @@ export default function ProjectsSection() {
         <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 mb-20 md:mb-28" staggerDelay={0.15}>
           {items.map((item, i) => (
             <StaggerItem key={i}>
-              <div className="group h-full rounded-2xl border border-border bg-card overflow-hidden hover:border-blue-500/30 hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-300 flex flex-col">
+              <div className="group relative h-full rounded-2xl border border-border bg-card overflow-hidden hover:border-blue-500/30 hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-300 flex flex-col">
+
+                {/* Botão de informações extras */}
+                {item.info && (
+                  <div className="absolute top-4 right-4 z-10">
+                    <InfoDialog 
+                      title={item.titleInfo as string}
+                      text={item.info}
+                    >
+                      <Button
+                        variant="outline_hover"
+                        size="icon" 
+                        className="w-8 h-8 rounded-full bg-background/80 backdrop-blur-sm border-border hover:bg-muted" 
+                        aria-label="Mais informações"
+                      >
+                        <Icon name="info" className="text-muted-foreground text-sm" />
+                      </Button>
+                    </InfoDialog>
+                  </div>
+                )}
+
                 <div className="relative h-44 md:h-48 bg-muted overflow-hidden">
                   {item.image ? (
                     <Image 
@@ -123,7 +146,7 @@ export default function ProjectsSection() {
         </StaggerContainer>
       </div>
 
-      <p className='text-muted-foreground text-sm mt-3 text-center' >{t('explanation')}</p>
+      <p className='text-muted-foreground text-sm mt-3 lg:mt-5 text-center max-w-7xl mx-auto' >{t('explanation')}</p>
 
     </section>
   );

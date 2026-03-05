@@ -32,6 +32,42 @@
       "graduation": "Graduation"
     }
   },
+  "Graduation": {
+    "title": "Education",
+    "subtitle": "My academic journey and certifications.",
+    "downloadText": "Download",
+    "viewText": "View",
+    "soon": "Download coming soon...",
+    "items": [
+      {
+        "degree": "Systems Analysis and Development",
+        "institution": "IFSP - Câmpus Hortolândia",
+        "period": "2023 - 2025",
+        "description": "Technology degree focused on software engineering, databases, and systems architecture, building a solid foundation for solving complex IT problems.",
+        "type": "degree",
+        "typeName": "degree"
+      },
+      {
+        "degree": "Complete Web Development (20 courses + 20 projects)",
+        "institution": "Udemy",
+        "period": "2024",
+        "description": "Intensive hands-on training with over 118 hours, covering essential frontend and backend technologies focused on building real-world projects and dynamic web applications.",
+        "type": "certificate",
+        "typeName": "certificate",
+        "driveUrl": "https://drive.google.com/file/d/13M9P5XLlhyJmqKofobEg-Zo5viwBTPDm/view?usp=sharing",
+        "externalUrl": "https://www.udemy.com/certificate/UC-6bf4637b-41b9-4773-9f0d-4fcf502873a5/"
+      },
+      {
+        "degree": "Technical Course: Administrative Assistant",
+        "institution": "SENAI - Hortolândia",
+        "period": "2021 - 2023",
+        "description": "Training that developed my business vision, process organization, and corporate routines. These soft skills provide a crucial advantage in deeply understanding the business rules of the software I develop.",
+        "type": "certificate",
+        "typeName": "certificate",
+        "driveUrl": "https://drive.google.com/file/d/1rCKQd27HZjeJ2KiULNLpBEChj0bs_S76/view?usp=sharing"
+      }
+    ]
+  },
   "Projects": {
     "title": "Projects",
     "subtitle": "A selection of projects that showcase my skills and experience.",
@@ -42,7 +78,7 @@
     "items": [
       {
         "title": "D&D Duel",
-        "description": "Nicknamed 'Andrey Duelos', this project is an RPG card game based on the well-known Dungeons & Dragons. The game is designed for a player to win 3 D&D cards and battle against another 3 cards drawn by the system. The objective of the game is to win the 3 duels that will be defined by the user and accumulate points. The backend was done with SpringBoot, which we learned in college, and the frontend was developed with Next.js and Tailwind CSS, technologies I am currently studying. The project code is divided into 3 parts: backend, frontend, and docker, each with its respective repository. The project was developed by me and 3 other students from my course, the code provided in the button below leads to the repository with the docker compose, where the other two links are located. In this project, I contributed with some parts of the backend, PostgreSQL configuration, and most of the frontend. API for card consumption: https://www.dnd5eapi.co",
+        "description": "Nicknamed 'Andrey Duelos', this is a Dungeons & Dragons-based RPG card game where the goal is to win duels using 3 cards against the system to score points. Developed by a team of 4, my main contribution was building most of the frontend (Next.js and Tailwind CSS), alongside backend tasks (Spring Boot) and PostgreSQL configuration. The app consumes the official API <https://www.dnd5eapi.co/> and the architecture is orchestrated via Docker Compose. The link below provides access to the main repository containing the services.",
         "image": "/img/projects/rpg-duelo.webp",
         "technologies": ["NextJS", "Tailwind CSS", "SpringBoot", "PostGreSQL", "Docker"],
         "liveUrl": "",
@@ -50,11 +86,21 @@
       },
       {
         "title": "FitForge",
-        "description": "Gym management system with control of students, workouts, and exercises. The purpose of the system is to be used by gyms only and not by end customers, so gyms can manage the workouts and registered users. For its complete operation, it requires authentication. The system was developed to meet the needs of small and medium-sized gyms, offering an intuitive interface and complete functionalities to facilitate business management. IMPORTANT: The NodeJs backend of the project has a private repository, but the frontend is available for viewing. If you want to access the backend, please contact me so I can provide access or share the code in some way.",
+        "description": "A B2B management system for gyms, focused on controlling students, workouts, and exercises. Developed for small and medium-sized businesses, it offers an intuitive interface for managers to centrally and efficiently organize operations. The provided link leads to a practical demonstration of how the system would work in a gym's day-to-day operations, which is why features like login and authentication are not active in this environment.",
+        "info": "The project's API is hosted on Render's free tier, which spins down the application after a period of inactivity. If you encounter an error or no data loads when accessing the pages, simply wait a few seconds and refresh the page (or try navigating again) until the API turn on and returns the items. NOTE: The Node.js backend repository is private, but the code can be shared upon request.",
+        "titleInfo": "Important Information",
         "image": "/img/projects/fitforge.webp",
         "technologies": ["NodeJS", "Docker", "Prisma", "React"],
-        "liveUrl": "",
+        "liveUrl": "https://fitforge.ltanner.dev/",
         "repoUrl": "https://github.com/LeandroTanner/fitforge-frontend.git"
+      },
+      {
+        "title": "ApodFlow",
+        "description": "A space exploration app that consumes NASA's Astronomy Picture of the Day (APOD) API. Featuring a fluid, immersive interface inspired by TikTok, the project presents astronomical images and facts in an engaging format. The platform also includes a date search filter, allowing users to easily discover which photo was highlighted by NASA on their birthday, for example.",
+        "image": "/img/projects/apod-flow.webp",
+        "technologies": ["Android Studio", "Java"],
+        "liveUrl": "",
+        "repoUrl": "https://github.com/LeandroTanner/apodflow.git"
       },
       {
         "title": "Estuda Enade",

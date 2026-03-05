@@ -32,6 +32,42 @@
       "graduation": "Formação"
     }
   },
+  "Graduation": {
+    "title": "Formação",
+    "subtitle": "Minha trajetória acadêmica e certificações.",
+    "downloadText": "Baixar",
+    "viewText": "Visualizar",
+    "soon": "Download em breve...",
+    "items": [
+      {
+        "degree": "Análise e Desenvolvimento de Sistemas",
+        "institution": "IFSP - Câmpus Hortolândia",
+        "period": "2023 - 2025",
+        "description": "Graduação tecnológica com foco em engenharia de software, banco de dados e arquitetura de sistemas, construindo uma base sólida para a resolução de problemas complexos em TI.",
+        "type": "degree",
+        "typeName": "graduação"
+      },
+      {
+        "degree": "Desenvolvimento Web Completo (20 cursos + 20 projetos)",
+        "institution": "Udemy",
+        "period": "2024",
+        "description": "Formação prática intensiva com mais de 118 horas, abrangendo tecnologias essenciais de frontend e backend com foco na construção de projetos reais e aplicações web dinâmicas.",
+        "type": "certificate",
+        "typeName": "certificado",
+        "driveUrl": "https://drive.google.com/file/d/13M9P5XLlhyJmqKofobEg-Zo5viwBTPDm/view?usp=sharing",
+        "externalUrl": "https://www.udemy.com/certificate/UC-6bf4637b-41b9-4773-9f0d-4fcf502873a5/"
+      },
+      {
+        "degree": "Técnico: Assistente Administrativo",
+        "institution": "SENAI - Hortolândia",
+        "period": "2021 - 2023",
+        "description": "Formação que desenvolveu minha visão de negócios, organização de processos e rotinas corporativas. Essas habilidades (soft skills) são um diferencial crucial para entender a fundo as regras de negócio dos softwares que desenvolvo.",
+        "type": "certificate",
+        "typeName": "certificado",
+        "driveUrl": "https://drive.google.com/file/d/1rCKQd27HZjeJ2KiULNLpBEChj0bs_S76/view?usp=sharing"
+      }
+    ]
+  },
   "Projects": {
     "title": "Projetos",
     "subtitle": "Uma selecao de projetos que demonstram minhas habilidades e experiencia.",
@@ -42,7 +78,7 @@
     "items": [
       {
         "title": "Duelo de D&D",
-        "description": "Apelidado de 'Andrey Duelos', este projeto é um jogo de cartas RPG baseado no conhecido Dungeons & Dragons. O jogo é projetado para um jogador ganhar 3 cartas de D&D e batalhar contra outras 3 cartas sorteadas pelo sistema. O objetivo do jogo é ganhar os 3 duelos que serão definidos pelo usuário e somar pontos. O backend foi realizado com SpringBoot, que aprendemos na faculdade, e o frontend foi desenvolvido com Next.js e Tailwind CSS, tecnologias que estou estudando atualmente. O código do projeto é dividido em 3 partes: backend, frontend e docker, cada um com seu respectivo repositório. O projeto foi desenvolvido por mim e mais 3 alunos do meu curso, o código fornecido no botão abaixo leva ao repositório com o docker compose, onde tem os outros dois links. Nesse projeto em contribui com algumas partes do backend, configuração do postgre e a maior parte do frontend. Api para consumo das cartas: https://www.dnd5eapi.co",
+        "description": "Apelidado de 'Andrey Duelos', este é um jogo de cartas RPG baseado em Dungeons & Dragons, onde o objetivo é vencer duelos com 3 cartas contra o sistema para somar pontos. Desenvolvido em uma equipe de 4 pessoas, minha contribuição principal foi a construção da maior parte do frontend (Next.js e Tailwind CSS), além de atuar no backend (Spring Boot) e na configuração do PostgreSQL. O projeto consome a API oficial <https://www.dnd5eapi.co/> e a arquitetura é orquestrada via Docker Compose. O link abaixo dá acesso ao repositório principal com os serviços.",
         "image": "/img/projects/rpg-duelo.webp",
         "technologies": ["NextJS", "Tailwind CSS", "SpringBoot", "PostGreSQL", "Docker"],
         "liveUrl": "",
@@ -50,11 +86,21 @@
       },
       {
         "title": "FitForge",
-        "description": "Sistema de gerenciamento de academia com controle de alunos, treinos e exercícios. O propósito do sistema é ser utilizado pelas academias apenas e não por clientes finais, assim as academias podem gerenciar os treinos e usuários cadastrados, para seu funcionamento completo necessita de autenticação. O sistema foi desenvolvido para atender as necessidades de academias de pequeno e médio porte, oferecendo uma interface intuitiva e funcionalidades completas para facilitar a gestão do negócio. IMPORTANTE: O backend NodeJs do projeto está com o repositório privado, mas o frontend está disponível para visualização. Caso deseje acessar o backend, entre em contato comigo para que eu possa fornecer acesso ou compartilhar o código de alguma forma.",
+        "description": "Sistema B2B de gestão para academias, focado no controle de alunos, treinos e exercícios. Desenvolvido para negócios de pequeno e médio porte, oferece uma interface intuitiva para que os gestores organizem toda a operação de forma centralizada e eficiente. O link fornecido leva a uma versão de demonstração prática de como o sistema funcionaria no dia a dia da academia, por isso funcionalidades como login e autenticação não estão ativas neste ambiente.",
+        "info": "A API do projeto está hospedada no serviço gratuito do Render, que desliga a aplicação após um período de inatividade. Se você encontrar algum erro ou não carregar nenhum dado ao acessar as páginas, basta aguardar alguns segundos e recarregar a página (ou tentar navegar novamente) até que a API ative e retorne os itens. NOTA: O repositório do backend (Node.js) é privado, mas o código pode ser disponibilizado mediante contato.",
+        "titleInfo": "Informação Importante",
         "image": "/img/projects/fitforge.webp",
         "technologies": ["NodeJS", "Docker", "Prisma", "React"],
-        "liveUrl": "",
+        "liveUrl": "https://fitforge.ltanner.dev/",
         "repoUrl": "https://github.com/LeandroTanner/fitforge-frontend.git"
+      },
+      {
+        "title": "ApodFlow",
+        "description": "Uma aplicação de exploração espacial que consome a API Astronomy Picture of the Day (APOD) da NASA. Com uma interface fluida e imersiva inspirada no formato do TikTok, o projeto apresenta imagens e curiosidades astronômicas de forma envolvente. A plataforma também conta com um filtro de busca por datas, permitindo que o usuário descubra facilmente qual foi a foto destacada pela NASA no dia do seu aniversário, por exemplo.",
+        "image": "/img/projects/apod-flow.webp",
+        "technologies": ["Android Studio", "Java"],
+        "liveUrl": "",
+        "repoUrl": "https://github.com/LeandroTanner/apodflow.git"
       },
       {
         "title": "Estuda Enade",

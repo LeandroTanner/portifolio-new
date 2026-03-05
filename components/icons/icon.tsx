@@ -7,6 +7,8 @@ const iconMap = {
   close: 'fa-solid fa-xmark',
   code: 'fa-solid fa-code',
   clear: 'fa-solid fa-broom',
+  info: 'fa-solid fa-info',
+  soon: 'fa-solid fa-hourglass-half fa-beat-fade',
   
   home: 'fa-solid fa-house',                      // Para Início
   xp: 'fa-solid fa-medal',                        // Para Experiência
@@ -35,7 +37,7 @@ const iconMap = {
   briefcase: 'fa-solid fa-briefcase',
   calendar: 'fa-solid fa-calendar-days',
   building: 'fa-solid fa-building',
-  certificate: 'fa-solid fa-certificate',
+  certificate: 'fa-solid fa-award',
   award: 'fa-solid fa-award',
   book: 'fa-solid fa-book',
   link: 'fa-solid fa-arrow-up-right-from-square',
