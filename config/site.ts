@@ -3,6 +3,7 @@ export const siteConfig = {
   url: 'https://ltanner.dev',
   links: {
     github: 'https://github.com/LeandroTanner',
+    githubProject: 'https://github.com/LeandroTanner/portifolio-new.git',
     linkedin: 'https://www.linkedin.com/in/leandrotanner/',
     email: 'ltannerdev@gmail.com',
     instagram: 'https://www.instagram.com/leandro_a.tanner/',

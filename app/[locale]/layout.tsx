@@ -15,12 +15,68 @@ const fontSans = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: 'Leandro Tanner',
-  description: 'FullStack Developer',
+  title: {
+    template: '%s | Leandro Tanner',
+    default: 'Leandro Tanner | Desenvolvedor Full Stack',
+  },
+  description: 'Desenvolvedor Full Stack em Hortolândia, especializado em C#, .NET, SQL Server e ecossistema React/Next.js. Confira meu portfólio.',
+  
+  keywords: [
+    'Leandro Tanner', 
+    'Desenvolvedor Full Stack', 
+    'Desenvolvedor Junior',
+    'C#', 
+    '.NET', 
+    'SQL Server', 
+    'Next.js', 
+    'Hortolândia',
+    'React',
+    'Portfólio de Desenvolvedor',
+    'Desenvolvimento Web',
+    'Desenvolvimento de Software',
+    'Desenvolvedor FullStack Hortolândia',
+    'Java',
+    'JavaScript',
+    'TypeScript',
+    'Node.js',
+    'Express',
+    'PostgreSQL',
+    'Docker',
+    'Spring Boot',
+  ],
+  authors: [{ name: 'Leandro Arantes Tanner', url: 'https://ltanner.dev' }],
+  
+  openGraph: {
+    type: 'website',
+    locale: 'pt_BR',
+    url: 'https://ltanner.dev',
+    title: 'Leandro Tanner | Desenvolvedor Full Stack',
+    description: 'Desenvolvedor Full Stack especializado em C#, .NET e Next.js. Veja meus projetos e experiência.',
+    siteName: 'Portfólio de Leandro Tanner',
+    images: [
+      {
+        url: '/img/logo/_logo-sm.png', 
+        width: 1200,
+        height: 630,
+        alt: 'Portfólio Leandro Tanner',
+      },
+    ],
+  },
+  
   icons: {
     icon: '/img/logo/_logo-sm.png',
   },
-  authors: [{ name: 'Leandro Arantes Tanner' }],    
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  viewportFit: 'cover' as const,
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#0f172a' },
+  ],
 };
 
 export default async function RootLayout({

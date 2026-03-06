@@ -32,6 +32,69 @@
       "graduation": "Formação"
     }
   },
+  "About": {
+    "title": "Sobre Mim",
+    "description": "Desenvolvedor Full Stack Júnior com formação em Análise e Desenvolvimento de Sistemas pelo IFSP. Fui efetivado após estágio por desempenho técnico e hoje atuo na evolução de sistemas corporativos com C#, .NET e SQL Server.",
+    "highlights": [
+      {
+        "label": "Projetos no Portfólio",
+        "value": "5+"
+      },
+      {
+        "label": "Tecnologias Dominadas",
+        "value": "20+"
+      },
+      {
+        "label": "Formação Técnica",
+        "value": "IFSP"
+      },
+      {
+        "label": "Efetivado por Mérito",
+        "value": "2025"
+      }
+    ],
+    "paragraphs": [
+      "Tenho experiência prática no desenvolvimento e manutenção de sistemas web, trabalhando com tecnologias como C#, .NET, SQL Server no backend e Next.js, React e Tailwind CSS no frontend.",
+      "Minha trajetória inclui passagens por suporte técnico na UNICAMP e ensino de programação para jovens, o que fortaleceu minhas habilidades de comunicação e resolução de problemas.",
+      "Busco constantemente evoluir, aplicando conhecimentos de stacks modernas como Docker, Spring Boot e arquiteturas escaláveis em projetos pessoais."
+    ]
+  },
+  "Experience": {
+    "title": "Experiência Profissional",
+    "subtitle": "Minha trajetória profissional e as empresas onde contribuí.",
+    "items": [
+      {
+        "role": "Desenvolvedor Web Júnior Full-stack",
+        "company": "Golden Skill IT Solutions",
+        "period": "Dezembro/2025 - Presente",
+        "url": "https://www.gsdoctor.com.br/",
+        "description": "Atuação na manutenção evolutiva de sistemas e desenvolvimento de novas funcionalidades utilizando C# (.NET) e bancos de dados SQL Server. Foco na otimização de interfaces com Bootstrap e jQuery para garantir a melhor experiência do usuário e responsividade. Revisão e criação de código backend para construção de APIs RESTful, otimização de querys antigas com ganho de +60% de desempenho.",
+        "technologies": ["C#", ".NET", "SQL Server", "Bootstrap", "jQuery", "JavaScript", "HTML5"]
+      },
+      {
+        "role": "Estagiário em Desenvolvimento Web",
+        "company": "Golden Skill IT Solutions",
+        "period": "Maio/2025 - Novembro/2025",
+        "url": "https://www.gsdoctor.com.br/",
+        "description": "Suporte no desenvolvimento e manutenção de sistemas web personalizados. Colaboração direta na criação de interfaces responsivas e aprendizado prático em rotinas ágeis de desenvolvimento de software.",
+        "technologies": ["C#", ".NET", "SQL Server", "Bootstrap", "jQuery", "JavaScript", "HTML5"]
+      },
+      {
+        "role": "Estagiário de Suporte em Informática",
+        "company": "Instituto de Biologia - UNICAMP",
+        "period": "Dezembro/2024 - Maio/2025",
+        "description": "Prestação de suporte técnico presencial e remoto, realização de manutenção preventiva e corretiva em estações de trabalho, instalação de sistemas operacionais (Windows e Linux) e configuração de equipamentos de rede.",
+        "technologies": ["Windows", "Linux", "Manutenção de Hardware", "Configuração de Software", "Suporte Técnico"]
+      },
+      {
+        "role": "Instrutor de Informática",
+        "company": "Código Kid",
+        "period": "Julho/2024 - Novembro/2024",
+        "description": "Ensino de lógica de programação e robótica para crianças e adolescentes. Acompanhamento do desenvolvimento dos alunos, fornecimento de suporte personalizado e auxílio na adaptação de metodologias pedagógicas.",
+        "technologies": ["Lógica de Programação", "Robótica", "Ensino", "Comunicação", "C#", "HTML5", "CSS3", "JavaScript"]
+      }
+    ]
+  },
   "Graduation": {
     "title": "Formação",
     "subtitle": "Minha trajetória acadêmica e certificações.",
@@ -156,7 +219,8 @@
       "send": "Enviar Mensagem",
       "sending": "Enviando...",
       "success": "Mensagem enviada com sucesso!",
-      "error": "Erro ao enviar mensagem. Tente novamente."
+      "error": "Erro ao enviar mensagem. Tente novamente.",
+      "timeout": "Tempo de requisição esgotado. Tente novamente."
     },
     "or": "ou me encontre em",
     "info": {
@@ -168,7 +232,9 @@
   "Email": {
     "invalid": "Por favor, preencha todos os campos corretamente.",
     "success": "Mensagem enviada com sucesso!",
-    "error": "Erro ao enviar mensagem. Tente novamente."
+    "error": "Erro ao enviar mensagem. Tente novamente.",
+    "configError": "Serviço de email não configurado. Entre em contato com o administrador.",
+    "timeout": "Tempo de requisição esgotado. Tente novamente."
   },
   "Footer": {
     "rights": "Todos os direitos reservados.",

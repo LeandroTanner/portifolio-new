@@ -57,17 +57,27 @@ export default function ContactSection() {
     const subject = formData.get('subject') as string;
     const message = formData.get('message') as string;
 
-    const result = await sendEmail(email, name, subject, message);
+    const clientTimeout = setTimeout(() => {
+      setIsPending(false);
+      setFeedback({ type: 'error', message: t('form.timeout') || 'Request timed out. Please try again.' });
+    }, 15000);
 
-    if (result?.success) {
-      // Usando o arquivo de tradução para a mensagem de sucesso
-      setFeedback({ type: 'success', message: t('form.success') });
-      (e.target as HTMLFormElement).reset();
-    } else {
+    try {
+      const result = await sendEmail(email, name, subject, message);
+      clearTimeout(clientTimeout);
+
+      if (result?.success) {
+        setFeedback({ type: 'success', message: t('form.success') });
+        (e.target as HTMLFormElement).reset();
+      } else {
+        setFeedback({ type: 'error', message: result?.message || t('form.error') });
+      }
+    } catch {
+      clearTimeout(clientTimeout);
       setFeedback({ type: 'error', message: t('form.error') });
+    } finally {
+      setIsPending(false);
     }
-    
-    setIsPending(false);
   };
 
   return (

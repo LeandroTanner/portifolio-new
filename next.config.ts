@@ -4,7 +4,7 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
-  // Usa as imagens em avif e webp para otimizar o carregamento
+  output: 'standalone',
   images: {
     formats: ['image/avif', 'image/webp'],
   }

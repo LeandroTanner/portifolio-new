@@ -32,6 +32,69 @@
       "graduation": "Graduation"
     }
   },
+  "About": {
+    "title": "About Me",
+    "description": "Junior Full Stack Developer with a degree in Systems Analysis and Development from IFSP. I was hired full-time after my internship due to strong technical performance, and I currently work on evolving enterprise systems using C#, .NET, and SQL Server.",
+    "highlights": [
+      {
+        "label": "Portfolio Projects",
+        "value": "5+"
+      },
+      {
+        "label": "Technologies Mastered",
+        "value": "20+"
+      },
+      {
+        "label": "Technical Degree",
+        "value": "IFSP"
+      },
+      {
+        "label": "Hired by Merit",
+        "value": "2025"
+      }
+    ],
+    "paragraphs": [
+      "I have hands-on experience in developing and maintaining web systems, working with technologies like C#, .NET, SQL Server on the backend and Next.js, React, and Tailwind CSS on the frontend.",
+      "My journey includes IT support at UNICAMP and teaching programming to young students, which strengthened my communication and problem-solving skills.",
+      "I'm constantly looking to grow, applying knowledge of modern stacks like Docker, Spring Boot, and scalable architectures in personal projects."
+    ]
+  },
+  "Experience": {
+    "title": "Professional Experience",
+    "subtitle": "My career journey and the companies I've contributed to.",
+    "items": [
+      {
+        "role": "Junior Full-stack Web Developer",
+        "company": "Golden Skill IT Solutions",
+        "period": "December 2025 - Present",
+        "url": "https://www.gsdoctor.com.br/",
+        "description": "Acting in the evolutionary maintenance of legacy systems and developing new features using C# (.NET) and SQL Server databases. Focused on UI optimization with Bootstrap and jQuery to ensure a responsive and improved user experience. Reviewing and creating backend code for building RESTful APIs, optimizing old queries with a performance gain of +60%.",
+        "technologies": ["C#", ".NET", "SQL Server", "Bootstrap", "jQuery", "JavaScript", "HTML5"]
+      },
+      {
+        "role": "Web Development Intern",
+        "company": "Golden Skill IT Solutions",
+        "period": "May 2025 - November 2025",
+        "url": "https://www.gsdoctor.com.br/",
+        "description": "Supported the development and maintenance of custom web systems. Collaborated in creating responsive interfaces and gained practical experience in professional software development routines.",
+        "technologies": ["C#", ".NET", "SQL Server", "Bootstrap", "jQuery", "JavaScript", "HTML5"]
+      },
+      {
+        "role": "IT Support Intern",
+        "company": "Biology Institute - UNICAMP",
+        "period": "December 2024 - May 2025",
+        "description": "Provided remote and on-site technical support, performed preventive and corrective maintenance on workstations, installed operating systems (Windows and Linux), and configured network equipment.",
+        "technologies": ["Windows", "Linux", "Hardware Maintenance", "Software Configuration", "Tech Support"]
+      },
+      {
+        "role": "IT & Programming Instructor",
+        "company": "Código Kid",
+        "period": "July 2024 - November 2024",
+        "description": "Taught programming logic and robotics to children and teenagers. Monitored student progress, provided personalized support, and contributed to the adaptation of educational tech content.",
+        "technologies": ["Programming Logic", "Robotics", "Teaching", "Communication", "C#", "HTML5", "CSS3", "JavaScript"]
+      }
+    ]
+},
   "Graduation": {
     "title": "Education",
     "subtitle": "My academic journey and certifications.",
@@ -156,7 +219,8 @@
       "send": "Send Message",
       "sending": "Sending...",
       "success": "Message sent successfully!",
-      "error": "Error sending message. Try again."
+      "error": "Error sending message. Try again.",
+      "timeout": "Request timed out. Please try again."
     },
     "or": "or reach me at",
     "info": {
@@ -168,7 +232,9 @@
   "Email": {
     "invalid": "Please fill in all fields correctly.",
     "success": "Message sent successfully!",
-    "error": "Error sending message. Try again."
+    "error": "Error sending message. Try again.",
+    "configError": "Email service not configured. Please contact the administrator.",
+    "timeout": "Request timed out. Please try again."
   },
   "Footer": {
     "rights": "All rights reserved.",

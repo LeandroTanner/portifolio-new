@@ -33,7 +33,7 @@ export default function NavBar() {
   ];
 
   return (
-    <header className="fixed bottom-4 sm:top-4 left-1/2 -translate-x-1/2 z-50 max-w-[95vw]">
+    <header className="fixed bottom-4 pb-[env(safe-area-inset-bottom)] sm:pb-0 sm:top-4 sm:pt-[env(safe-area-inset-top)] left-1/2 -translate-x-1/2 z-50 max-w-[95%] h-fit">
       <nav className="
         flex items-center gap-1 p-1.5
         rounded-full
@@ -96,7 +96,7 @@ export default function NavBar() {
                   </TooltipTrigger>
                   
                   {/* CONTEÚDO DO TOOLTIP */}
-                  <TooltipContent side="top" className="sm:hidden text-xs bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900">
+                  <TooltipContent side="bottom" className="sm:hidden text-xs bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900">
                     <p>{item.name}</p>
                   </TooltipContent>
                 </Tooltip>

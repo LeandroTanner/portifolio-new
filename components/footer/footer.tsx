@@ -4,7 +4,6 @@ import { useTranslations } from 'next-intl';
 import { Icon, IconName } from '@/components/icons/icon';
 import { siteConfig } from '@/config/site';
 import { openUrl, scrollTo } from '@/config/utils';
-import { TooltipHover } from '@/components/utils/tooltip';
 
 export default function Footer() {
   const t = useTranslations('Footer');
@@ -39,14 +38,14 @@ export default function Footer() {
             </p>
             <div className="flex gap-2.5">
               {socialLinks.map((link, i) => (
-                  <button
-                      key={i}
-                      onClick={() => openUrl(link.href)}
-                      className="w-9 h-9 rounded-lg border border-border flex items-center justify-center     text-muted-foreground hover:text-blue-500 hover:border-blue-500/30 transition-all duration-300  cursor-pointer"
-                      aria-label={link.label}
-                  >
-                      <Icon name={link.icon} className="text-sm" />
-                  </button>
+                <button
+                  key={i}
+                  onClick={() => openUrl(link.href)}
+                  className="w-9 h-9 rounded-lg border border-border flex items-center justify-center text-muted-foreground hover:text-blue-500 hover:border-blue-500/30 transition-all duration-300 cursor-pointer"
+                  aria-label={link.label}
+                >
+                  <Icon name={link.icon} className="text-sm" />
+                </button>
               ))}
             </div>
           </div>
