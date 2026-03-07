@@ -55,12 +55,20 @@ export const metadata: Metadata = {
     siteName: 'Portfólio de Leandro Tanner',
     images: [
       {
-        url: '/img/logo/_logo-sm.png', 
+        url: '/opengraph-image.png', 
         width: 1200,
         height: 630,
         alt: 'Portfólio Leandro Tanner',
       },
     ],
+  },
+
+  // Para exibir o card grande em redes sociais
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Leandro Tanner | Desenvolvedor Full Stack',
+    description: 'Desenvolvedor Full Stack especializado em C#, .NET e Next.js. Veja meus projetos e experiência.',
+    images: ['/opengraph-image.png'], 
   },
   
   icons: {

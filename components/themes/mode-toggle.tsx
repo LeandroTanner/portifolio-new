@@ -5,7 +5,7 @@ import { useTheme } from 'next-themes';
 import styles from './style.module.css';
 
 export function ModeToggle() {
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = React.useState(false);
 
   React.useEffect(() => {
@@ -21,8 +21,8 @@ export function ModeToggle() {
       <input
         type='checkbox'
         className={styles['theme-switch__checkbox']}
-        checked={theme === 'dark'}
-        onChange={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+        checked={resolvedTheme === 'dark'}
+        onChange={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
       />
       <div className={styles['theme-switch__container']}>
         <div className={styles['theme-switch__clouds']}></div>

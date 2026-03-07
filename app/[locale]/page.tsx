@@ -20,7 +20,7 @@ export default function HomePage() {
   const t = useTranslations('Hero');
   const skills = useRawArray('Hero.skills');
   const dialogCV = useTranslations('Dialog.cv');
-  const linkGithub = siteConfig.links.github;
+  const linkGithub = siteConfig.links.githubProject;
 
   return (
     <div>

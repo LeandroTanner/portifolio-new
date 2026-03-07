@@ -178,7 +178,7 @@
         "description": "My old portfolio, developed before learning Next.js and other modern technologies. It was created using pure HTML, CSS, and JavaScript, without the use of frameworks or libraries. The design is simple and functional, it is responsive but has some limitations in terms of usability. This project helped me learn the fundamentals of web development and motivated me to seek more advanced knowledge to create a more modern and efficient portfolio.",
         "image": "/img/projects/old-portifolio.webp",
         "technologies": ["HTML", "CSS", "JavaScript"],
-        "liveUrl": "https://ltanner.dev/home",
+        "liveUrl": "https://old.ltanner.dev/home",
         "repoUrl": "https://github.com/LeandroTanner/portifolio-old.git"
       }
     ],

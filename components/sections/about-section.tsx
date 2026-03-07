@@ -10,8 +10,12 @@ const highlightIcons = ['briefcase', 'rocket', 'cpu', 'star'] as const;
 
 export default function AboutSection() {
   const t = useTranslations('About');
-  const highlights = t.raw('highlights') as { label: string; value: string }[];
+  const highlights = t.raw('highlights') as { label: string; value: string; id: string }[];
   const paragraphs = t.raw('paragraphs') as string[];
+  const projects = useRawArray('Projects.items');
+  const skills = useRawArray('Projects.techStack');
+  const skillsCount = skills.length;
+  const projectsCount = projects.length;
 
   return (
     <section id="about" className="py-20 md:py-28 px-4">
@@ -37,7 +41,11 @@ export default function AboutSection() {
                   <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center group-hover:bg-blue-500/20 transition-colors duration-300">
                     <Icon name={highlightIcons[i]} className="text-blue-500 text-lg" />
                   </div>
-                  <span className="text-3xl md:text-4xl font-bold text-foreground">{item.value}</span>
+                  <span className="text-3xl md:text-4xl font-bold text-foreground">
+                    {
+                      item.id === 'skills' ? `${skillsCount} +` : item.id === 'projects' ? `${projectsCount} +` : item.value
+                    }
+                  </span>
                   <span className="text-xs md:text-sm text-muted-foreground text-center text-nowrap">{item.label}</span>
                 </div>
               </StaggerItem>

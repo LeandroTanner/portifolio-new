@@ -24,7 +24,7 @@ export default function GraduationSection() {
 
   return (
     <section id="graduation" className="py-20 md:py-28 px-4">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <SectionHeader title={t('title')} subtitle={t('subtitle')} />
 
         <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6" staggerDelay={0.15}>

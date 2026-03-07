@@ -38,11 +38,13 @@
     "highlights": [
       {
         "label": "Projetos no Portfólio",
-        "value": "5+"
+        "value": "5+",
+        "id": "projects"
       },
       {
         "label": "Tecnologias Dominadas",
-        "value": "20+"
+        "value": "20+",
+        "id": "skills"
       },
       {
         "label": "Formação Técnica",
@@ -178,7 +180,7 @@
         "description": "Meu antigo portifólio, desenvolvido antes de aprender Next.js e outras tecnologias modernas. Ele foi criado usando HTML, CSS e JavaScript puro, sem o uso de frameworks ou bibliotecas. O design é simples e funcional, é responsivo, porém possui algumas limitações em termos de usabilidade. Este projeto me ajudou a aprender os fundamentos do desenvolvimento web e me motivou a buscar conhecimentos mais avançados para criar um portifólio mais moderno e eficiente.",
         "image": "/img/projects/old-portifolio.webp",
         "technologies": ["HTML", "CSS", "JS"],
-        "liveUrl": "https://ltanner.dev/home",
+        "liveUrl": "https://old.ltanner.dev/home",
         "repoUrl": "https://github.com/LeandroTanner/portifolio-old.git"
       }
     ],

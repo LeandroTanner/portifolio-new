@@ -10,5 +10,5 @@ services:
       - RESEND_API_KEY=${RESEND_API_KEY}
       - RESEND_TEMPLATE_ID=${RESEND_TEMPLATE_ID}
     env_file:
-      - .env.local
+      - .env
     restart: unless-stopped
